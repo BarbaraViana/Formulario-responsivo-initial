@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Barbara Cristina Viana">
+    <title>Formulário Responsivo</title>
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        /*Classes Auxiliares*/
+        
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 2%;
+        }
+        
+        .clear {
+            clear: both;
+        }
+        
+        .w-50 {
+            float: left;
+            width: 50%;
+            padding: 0 10px;
+        }
+        
+        .w-100 {
+            float: left;
+            width: 100%;
+            padding: 0 10px;
+        }
+        /*Estilo Proprio*/
+        
+        body {
+            background: rgb(225, 225, 225);
+        }
+        
+        h2 {
+            text-align: center;
+            color: blue;
+            padding: 10px 0;
+            font-size: 24px;
+            text-transform: uppercase;
+            border-bottom: 2px solid;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding-left: 8px;
+            height: 40px;
+            border: 1px solid #ccc;
+            padding: 0 10px;
+        }
+        
+        .form-group-1 textarea {
+            width: 100%;
+            padding-left: 8px;
+            height: 120px;
+            border: 1px solid #ccc;
+            padding: 0 10px;
+        }
+        
+        .form-group-2 input {
+            width: 140px;
+            height: 40px;
+            background: #4260f4;
+            color: #fff;
+            border: 0;
+            margin-top: 10px;
+        }
+        
+        button {
+            display: flex;
+        }
+        
+        @media screen and (max-width: 500px) {
+            .w-50 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Entre em Contato</h2>
+        <form>
+            <div class="w-50">
+                <div class="form-group">
+                    <label>Nome</label>
+                    <input type="text" name="nome">
+                </div>
+            </div>
+            <div class="w-50">
+                <div class="form-group">
+                    <label>Sobrenome</label>
+                    <input type="text" name="nome">
+                </div>
+            </div>
+            <div class="w-50">
+                <div class="form-group">
+                    <label>Celular</label>
+                    <input type="phone" name="nome">
+                </div>
+            </div>
+            <div class="w-50">
+                <div class="form-group">
+                    <label>E-mail</label>
+                    <input type="email" name="nome">
+                </div>
+            </div>
+            <div class="w-100">
+                <div class="form-group-1">
+                    <label>Mensagem</label>
+                    <textarea name="" id="" cols="30" rows="10" type="text"></textarea>
+                </div>
+            </div>
+            <div class="w-100">
+                <div class="form-group-2">
+                    <input type="submit" name="acao" value="Enviar">
+                </div>
+            </div>
+
+            <div class="clear"></div>
+        </form>
+    </div>
+</body>
+
+</html>
